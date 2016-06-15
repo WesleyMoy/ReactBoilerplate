@@ -8,7 +8,13 @@ export default class Child extends Component {
 
   render() {
     return (
-      <div>This is a child component</div>
+      <div>
+      	{this.props.counter}
+      	<div>
+      		<button onClick={this.props.addCounter()}>+</button>
+      		<button>-</button>
+      	</div>
+      </div>
     );  
   }
 }
